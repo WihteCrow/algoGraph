@@ -1,0 +1,33 @@
+{
+  "name": "algorithm",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "algorithm/src",
+  "projectType": "library",
+  "release": {
+    "version": {
+      "generatorOptions": {
+        "packageRoot": "dist/{projectRoot}",
+        "currentVersionResolver": "git-tag"
+      }
+    }
+  },
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/algorithm",
+        "tsConfig": "algorithm/tsconfig.lib.json",
+        "packageJson": "algorithm/package.json",
+        "main": "algorithm/src/index.ts",
+        "assets": ["algorithm/*.md"]
+      }
+    },
+    "nx-release-publish": {
+      "options": {
+        "packageRoot": "dist/{projectRoot}"
+      }
+    }
+  }
+}
