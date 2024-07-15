@@ -26,6 +26,16 @@
     "version": {
       "preVersionCommand": "npx nx run-many -t build",
       "conventionalCommits": true
+    },
+    "changelog": {
+      "projectChangelogs": {
+        "renderOptions": {
+          "authors": true,
+          "mapAuthorsToGitHubUsernames": true,
+          "commitReferences": true,
+          "versionTitleDate": true
+        }
+      }
     }
   },
   "plugins": [
