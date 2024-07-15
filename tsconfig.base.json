@@ -16,7 +16,8 @@
     "baseUrl": ".",
     "paths": {
       "@algoGraph/algorithm": ["algorithm/src/index.ts"],
-      "@algoGraph/js-helpers": ["js-helpers/src/index.ts"]
+      "@algoGraph/js-helpers": ["js-helpers/src/index.ts"],
+      "@algoGraph/node-helpers": ["node-helpers/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
