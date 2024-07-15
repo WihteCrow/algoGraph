@@ -4,6 +4,7 @@
  */
 export function compose(...fns: Function[]) {
   if (fns.length === 0) {
+    // Return an identity function if no functions are provided.
     return (arg: any) => arg;
   }
 
